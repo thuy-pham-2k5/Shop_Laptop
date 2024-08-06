@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+
+<VBox alignment="CENTER" spacing="20" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shop_laptop.ShopLoginController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <Label text="Sign In" style="-fx-font-size: 50px; -fx-font-weight: bold; -fx-text-fill: lightblue;"/>
+    <HBox alignment="CENTER" spacing="10">
+        <Label text="Username:" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+        <TextField fx:id="userTextField" promptText="Username" prefWidth="400" style="-fx-font-size: 18px; -fx-border-color: lightblue; -fx-border-width: 2px; -fx-background-radius: 5px; -fx-padding: 5px;"/>
+    </HBox>
+    <HBox alignment="CENTER" spacing="10">
+        <Label text="Password:" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+        <PasswordField fx:id="passwordField" promptText="Password" prefWidth="400" style="-fx-font-size: 18px; -fx-border-color: lightblue; -fx-border-width: 2px; -fx-background-radius: 5px; -fx-padding: 5px;"/>
+    </HBox>
+    <HBox alignment="CENTER" spacing="10">
+        <Button text="Login" style="-fx-background-color: linear-gradient(to bottom, #4CAF50, #2E7D32); -fx-text-fill: white; -fx-font-size: 18px; -fx-padding: 10px 20px; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 0);" onAction="#handleLogin"/>
+    </HBox>
+    <Label fx:id="messageLabel" style="-fx-font-size: 16px;"/>
+</VBox>
