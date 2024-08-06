@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.control.cell.PropertyValueFactory?>
 
-<VBox xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shop_laptop.ProductController" spacing="20" padding="20">
+<VBox xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shop_laptop.login.ProductController" spacing="20" padding="20">
     <Label text="Product Management" style="-fx-font-size: 30px; -fx-font-weight: bold; -fx-text-fill: lightblue;"/>
 
     <HBox spacing="10">

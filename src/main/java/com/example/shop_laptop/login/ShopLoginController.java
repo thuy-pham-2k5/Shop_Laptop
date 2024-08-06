@@ -1,5 +1,6 @@
-package com.example.shop_laptop;
+package com.example.shop_laptop.login;
 
+import com.example.shop_laptop.login.ShopAdmin;
 import javafx.fxml.FXML;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;

@@ -65,7 +65,7 @@
                     <execution>
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.example.shop_laptop.ShopLaptopApplication</mainClass>
+                            <mainClass>com.example.shop_laptop.login.ShopLaptopApplication</mainClass>
                         </configuration>
                     </execution>
                 </executions>

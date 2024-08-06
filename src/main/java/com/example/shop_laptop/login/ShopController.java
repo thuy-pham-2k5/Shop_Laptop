@@ -1,4 +1,4 @@
-package com.example.shop_laptop;
+package com.example.shop_laptop.login;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

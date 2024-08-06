@@ -1,4 +1,4 @@
-package com.example.shop_laptop;
+package com.example.shop_laptop.login;
 
 public class LaptopProduct {
     private String name;

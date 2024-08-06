@@ -1,5 +1,6 @@
-package com.example.shop_laptop;
+package com.example.shop_laptop.login;
 
+import com.example.shop_laptop.login.LaptopProduct;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
