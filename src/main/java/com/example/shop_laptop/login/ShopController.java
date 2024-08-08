@@ -14,7 +14,7 @@ public class ShopController {
     private void showLogin(ActionEvent event) throws IOException {
         Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
         Parent root = FXMLLoader.load(getClass().getResource("/com/example/shop_laptop/shop-login-view.fxml"));
-        stage.setScene(new Scene(root, 1600, 1000));
+        stage.setScene(new Scene(root, 800, 600));
     }
 
     @FXML
