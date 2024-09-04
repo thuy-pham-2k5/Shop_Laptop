@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600" prefWidth="900" spacing="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shop_laptop.Customer.CustomerController">
+    <!-- Các phần tử trong giao diện -->
+
+    <!-- HBox chứa logo tròn và tiêu đề -->
+    <HBox alignment="CENTER" spacing="10">
+        <!-- Logo hình tròn -->
+        <Circle radius="35.0" />
+
+        <!-- Khoảng trống để đẩy tiêu đề ra giữa -->
+        <Region fx:id="leftSpacer" HBox.hgrow="ALWAYS" />
+
+        <!-- Tiêu đề ở giữa -->
+        <Text fill="#d31616" style="-fx-font-size: 35px;" text="4P Tech Store">
+            <font>
+                <Font size="44.0" />
+            </font>
+        </Text>
+        <Region fx:id="rightSpacer" HBox.hgrow="ALWAYS" />
+    </HBox>
+
+    <!-- HBox chứa MenuBar và điều chỉnh khoảng cách giữa các mục -->
+    <HBox alignment="CENTER" spacing="20" style="-fx-font-size: 20">
+        <HBox HBox.hgrow="ALWAYS">
+            <MenuBar styleClass="menu" HBox.hgrow="ALWAYS">
+                <Menu text="Sản phẩm">
+                    <MenuItem onAction="#productList" text="Danh sách sản phẩm" />
+                </Menu>
+                <Menu text="Khách hàng">
+                    <MenuItem onAction="#customerList" text="Danh sách khách hàng" />
+                </Menu>
+                <Menu text="Đơn hàng">
+                    <MenuItem text="Danh sách đơn hàng" />
+                </Menu>
+                <Menu text="Tài khoản">
+                    <MenuItem onAction="#account" text="Tài Khoản của tôi" />
+                    <MenuItem onAction="#Logout" text="Đăng xuất" />
+                    <MenuItem onAction="#register" text="Đăng ký" />
+                </Menu>
+            </MenuBar>
+        </HBox>
+    </HBox>
+
+    <!-- Khu vực bên trái với các thanh điều hướng -->
+    <VBox spacing="10" style="-fx-background-color: #f0f0f0;">
+        <TableView fx:id="tableView" prefHeight="361.0" prefWidth="715.0">
+            <columns>
+                <TableColumn fx:id="usernameColumn" prefWidth="134.9999898672104" text="UserName" />
+                <TableColumn fx:id="passwordColumn" minWidth="1.999969482421875" prefWidth="136.3332977294922" text="Password" />
+            <TableColumn fx:id="nameColumn" minWidth="0.0" prefWidth="189.66665649414062" text="Name" />
+            <TableColumn fx:id="emailColumn" prefWidth="281.3333740234375" text="Email" />
+            <TableColumn fx:id="phoneColumn" prefWidth="158.0" text="Phone" />
+            </columns>
+        </TableView>
+<!--        <Button text="Load Data" onAction="#loadData"/>-->
+    </VBox>
+
+    <VBox style="-fx-background-color: #e0e0e0;" />
+    <HBox alignment="TOP_LEFT">
+   <Button mnemonicParsing="false" onAction="#addCustomer" prefHeight="25.0" prefWidth="56.0" text="Thêm">
+         <HBox.margin>
+            <Insets right="50.0" />
+         </HBox.margin></Button>
+   <Button mnemonicParsing="false" onAction="#editCustomer" prefHeight="25.0" prefWidth="48.0" text="Sửa " />
+   <Button mnemonicParsing="false" onAction="#removeCustomer" prefHeight="25.0" prefWidth="58.0" text="Xoá">
+         <HBox.margin>
+            <Insets left="50.0" />
+         </HBox.margin></Button>
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+    </HBox><!-- Khu vực bên phải chiếm 20% -->
+</VBox>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600" prefWidth="900" spacing="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shop_laptop.staff.StaffController">
+    <!-- Các phần tử trong giao diện -->
+
+    <!-- HBox chứa logo tròn và tiêu đề -->
+    <HBox alignment="CENTER" spacing="10">
+        <!-- Logo hình tròn -->
+        <Circle radius="35.0" />
+
+        <!-- Khoảng trống để đẩy tiêu đề ra giữa -->
+        <Region fx:id="leftSpacer" HBox.hgrow="ALWAYS" />
+
+        <!-- Tiêu đề ở giữa -->
+        <Text fill="#d31616" style="-fx-font-size: 35px;" text="4P Tech Store">
+            <font>
+                <Font size="44.0" />
+            </font>
+        </Text>
+        <Region fx:id="rightSpacer" HBox.hgrow="ALWAYS" />
+    </HBox>
+
+    <!-- HBox chứa MenuBar và điều chỉnh khoảng cách giữa các mục -->
+    <HBox alignment="CENTER" spacing="20" style="-fx-font-size: 20">
+        <HBox HBox.hgrow="ALWAYS">
+            <MenuBar styleClass="menu" HBox.hgrow="ALWAYS">
+                <Menu text="Sản phẩm">
+                    <MenuItem onAction="#listProduct" text="Danh sách sản phẩm" />
+                </Menu>
+                <Menu text="Đơn hàng">
+                    <MenuItem onAction="#hoadon" text="Xem đơn hàng" />
+                    <MenuItem text="Quản lý đơn hàng" />
+                </Menu>
+                <Menu text="Khách hàng">
+                    <MenuItem text="Danh sách nhân viên" />
+                    <MenuItem onAction="#Customer" text="Tài Khoản Khách Hàng" />
+                </Menu>
+                <Menu text="Tài khoản">
+                    <MenuItem onAction="#GoToAccount" text="Tài Khoản của tôi" />
+                    <MenuItem onAction="#logout" text="Đăng xuất" />
+                </Menu>
+            </MenuBar>
+        </HBox>
+    </HBox>
+
+    <!-- Khu vực bên trái với các thanh điều hướng -->
+    <VBox spacing="10" style="-fx-background-color: #f0f0f0;">
+        <TableView fx:id="tableView" prefHeight="361.0" prefWidth="715.0">
+            <columns>
+                <TableColumn fx:id="column1" prefWidth="75.0" text="Ảnh" />
+                <TableColumn fx:id="column2" prefWidth="75.0" text="C2" />
+            </columns>
+        </TableView>
+    </VBox>
+
+    <VBox style="-fx-background-color: #e0e0e0;" /> <!-- Khu vực bên phải chiếm 20% -->
+</VBox>

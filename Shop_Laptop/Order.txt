@@ -1,0 +1,7 @@
+Time: 2024-09-04 10:10:20
+Product Name, Quantity, Unit Price
+MacBookAir,2,2500000.0
+DEll,2,1800000.0
+Asus,1,2300000.0
+Total Amount: 10900000,00 VND
+--------------------------------------------------

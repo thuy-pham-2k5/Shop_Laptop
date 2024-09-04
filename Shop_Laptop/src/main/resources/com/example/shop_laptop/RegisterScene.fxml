@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shop_laptop.signin.RegisterController">
+
+    <ImageView fitHeight="600.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="false">
+        <Image url="https://cdn.tgdd.vn/Files/2017/01/19/939425/cach-cai-hinh-nen-may-tinh-khong-bi-mo_1280x720-800-resize.jpg" />
+    </ImageView>
+
+    <!-- Main Container -->
+    <VBox alignment="CENTER" layoutX="308.0" prefHeight="600.0" prefWidth="300.0" spacing="20.0" styleClass="login-container">
+        <ImageView fx:id="logoImageView" fitHeight="133.0" fitWidth="139.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="https://i.ibb.co/cCrHQF7/taoanhdep-logo-polygon.jpg" />
+        </ImageView>
+        <Text fill="#00cc13" strokeType="OUTSIDE" strokeWidth="0.0" text="Register Account" wrappingWidth="195.0">
+            <font>
+                <Font name="Arial" size="24.0" />
+            </font>
+        </Text>
+
+        <!-- Name Field -->
+        <TextField fx:id="nameField" prefHeight="30.0" prefWidth="200.0" promptText="Fullname" styleClass="text-field" />
+
+        <!-- Email Field -->
+        <TextField fx:id="emailField" prefHeight="30.0" prefWidth="200.0" promptText="Email" styleClass="text-field" />
+
+        <!-- Phone Field -->
+        <TextField fx:id="phoneField" prefHeight="30.0" prefWidth="200.0" promptText="Phone" styleClass="text-field" />
+
+        <!-- Username Field -->
+        <TextField fx:id="usernameField" prefHeight="30.0" prefWidth="200.0" promptText="Username" styleClass="text-field" />
+
+        <!-- Password Field -->
+        <PasswordField fx:id="passwordField" prefHeight="30.0" prefWidth="200.0" promptText="Password" styleClass="text-field" />
+
+        <!-- Confirm Password Field -->
+        <PasswordField fx:id="confirmPasswordField" prefHeight="30.0" prefWidth="200.0" promptText="Confirm Password" styleClass="text-field" />
+
+        <!-- Register Button -->
+        <Button fx:id="registerButton" onAction="#handleRegisterAction" style="-fx-background-color: rgba(0, 102, 255, 0.3); -fx-text-fill: white;" text="Register">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+
+        <!-- Back Button -->
+        <Button fx:id="backButton" onAction="#handleBackAction" style="-fx-background-color: rgba(255, 0, 0, 0.3); -fx-text-fill: white;" text="Back">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+    </VBox>
+</AnchorPane>

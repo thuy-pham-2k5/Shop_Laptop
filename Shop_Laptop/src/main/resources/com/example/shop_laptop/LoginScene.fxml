@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+            prefWidth="900.0" xmlns="http://javafx.com/javafx/21-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.shop_laptop.signin.LoginController">
+
+    <ImageView fitHeight="600.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="false">
+        <Image url="https://cdn.tgdd.vn/Files/2017/01/19/939425/cach-cai-hinh-nen-may-tinh-khong-bi-mo_1280x720-800-resize.jpg"/>
+    </ImageView>
+
+    <VBox prefHeight="600.0" prefWidth="300.0"/>
+
+    <!-- Main Container -->
+    <VBox alignment="CENTER" layoutX="308.0" prefHeight="600.0" prefWidth="300.0" spacing="20.0"
+          styleClass="login-container">
+        <ImageView fx:id="logoImageView" fitHeight="133.0" fitWidth="139.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="https://i.ibb.co/cCrHQF7/taoanhdep-logo-polygon.jpg"/>
+        </ImageView>
+        <Text fill="#0000CC" strokeType="OUTSIDE" strokeWidth="0.0" text="Login App" wrappingWidth="116.0">
+            <font>
+                <Font name="Arial" size="24.0"/>
+            </font>
+        </Text>
+
+        <!-- Email Field -->
+        <TextField fx:id="emailField" prefHeight="30.0" prefWidth="200.0" promptText="Username"
+                   styleClass="text-field"/>
+
+        <!-- Password Field -->
+        <PasswordField fx:id="passwordField" prefHeight="30.0" prefWidth="200.0" promptText="Password"
+                       styleClass="text-field"/>
+
+        <!-- Show/Hide Password and Forgot Password Button -->
+        <TextField fx:id="passwordTextField" prefHeight="30.0" prefWidth="200.0" promptText="Password"
+                   styleClass="text-field" visible="false">
+            <VBox.margin>
+                <Insets top="-50.0"/>
+            </VBox.margin>
+        </TextField>
+
+        <HBox alignment="CENTER_LEFT" spacing="10.0">
+            <Button fx:id="showPasswordButton" onAction="#handleShowPasswordAction"
+                    style="-fx-background-color: rgba(0, 0, 0, 0.3); -fx-text-fill: white;" text="Show Password"/>
+
+            <Hyperlink fx:id="forgotPasswordLink" prefHeight="23.0" prefWidth="105.0" text="Forgot Password?"
+                       textFill="#e9f503">
+                <HBox.margin>
+                    <Insets left="80.0"/>
+                </HBox.margin>
+            </Hyperlink>
+        </HBox>
+
+        <!-- Login Button -->
+        <Button fx:id="loginButton" onAction="#handleLoginAction"
+                style="-fx-background-color: rgba(0, 221, 0, 0.3); -fx-text-fill: white;" text="LOGIN" >
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Button>
+        <Button fx:id="registerButton" onAction="#handleRegisterAction"
+                style="-fx-background-color: rgba(0, 102, 255, 0.3); -fx-text-fill: white;" text="Register">
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Button>
+    </VBox>
+
+    <VBox layoutX="608.0" layoutY="7.0" prefHeight="600.0" prefWidth="300.0"/>
+</AnchorPane>

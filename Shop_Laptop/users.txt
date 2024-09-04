@@ -1,0 +1,4 @@
+aa:aaa:11111:tandung@gmail.com:0987654321
+a:12:b:a@gmail.com:0987654321
+aaa:aaaa:aaa:a@gmail.com:0987654321
+aaa:1:a:@gmail.com:0987654321

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shop_laptop.productUser.AddProductController">
+    <children>
+        <VBox fx:id="productAdmin_VBox" layoutX="10.0" layoutY="10.0" prefHeight="278.0" prefWidth="170.0" stylesheets="@../../../styles.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <children>
+                <VBox VBox.vgrow="ALWAYS">
+                    <children>
+                        <ImageView fx:id="productA_image" fitHeight="132.0" fitWidth="146.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS" />
+                    </children>
+                </VBox>
+                <Label fx:id="productA_name" prefHeight="28.0" prefWidth="157.0" VBox.vgrow="ALWAYS" />
+                <Label fx:id="productA_price" prefHeight="31.0" prefWidth="150.0" VBox.vgrow="ALWAYS">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <Button fx:id="productA_add" mnemonicParsing="false" prefHeight="30.0" prefWidth="159.0" text="Add To Cart" VBox.vgrow="ALWAYS">
+                    <padding>
+                        <Insets left="10.0" right="10.0" />
+                    </padding>
+                </Button>
+            </children>
+            <opaqueInsets>
+                <Insets left="10.0" />
+            </opaqueInsets>
+            <styleClass>
+                <String fx:value="vbox-with-padding" />
+                <String fx:value="vbox" />
+            </styleClass>
+        </VBox>
+    </children>
+</AnchorPane>

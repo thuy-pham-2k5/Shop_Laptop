@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10" style="-fx-padding: 20;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shop_laptop.Account.EditAccountController">
+
+    <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Chỉnh sửa thông tin cá nhân" />
+
+    <Label text="Họ tên:" />
+    <TextField fx:id="hoTenInput" promptText="Nhập họ tên" />
+
+    <Label text="Số điện thoại:" />
+    <TextField fx:id="soDienThoaiInput" promptText=" Nhập số điện thoại" />
+
+    <Label text="Email:" />
+    <TextField fx:id="emailInput" promptText="Nhập Email" />
+
+    <Label text="Địa chỉ:" />
+    <TextField fx:id="diaChiInput" promptText="Nhập địa chỉ" />
+
+    <Button onAction="#saveChanges" prefHeight="25.0" prefWidth="51.0" text="Lưu" />
+    <Button onAction="#cancelChanges" prefHeight="25.0" prefWidth="55.0" text="Hủy" />
+</VBox>

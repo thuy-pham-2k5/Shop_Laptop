@@ -1,0 +1,17 @@
+.rounded-anchorpane {
+    -fx-background-color: white; /* Màu nền của AnchorPane */
+    -fx-border-color: lightgray; /* Màu viền của AnchorPane */
+    -fx-border-radius: 15; /* Bán kính bo tròn của viền */
+    -fx-background-radius: 15; /* Bán kính bo tròn của nền */
+    -fx-padding: 10; /* Khoảng cách bên trong giữa nội dung và viền */
+}
+.white-bg {
+    -fx-background-color: white; /* Nền trắng */
+    -fx-background-radius: 2; /* Bo tròn các góc */
+    -fx-padding: 10; /* Đệm bên trong */
+}
+
+.shadow {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.5, 0, 4); /* Bóng đổ */
+}
+
