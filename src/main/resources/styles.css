@@ -1,0 +1,48 @@
+.rounded-anchorpane {
+    -fx-background-color: white; /* Màu nền của AnchorPane */
+    -fx-border-color: lightgray; /* Màu viền của AnchorPane */
+    -fx-border-radius: 5; /* Bán kính bo tròn của viền */
+    -fx-background-radius: 5; /* Bán kính bo tròn của nền */
+    -fx-padding: 10px; /* Khoảng cách bên trong giữa nội dung và viền */
+}
+.white-bg {
+    -fx-background-color: white; /* Nền trắng */
+    -fx-background-radius: 2; /* Bo tròn các góc */
+    -fx-padding: 10px; /* Đệm bên trong */
+}
+
+.shadow {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.5, 0, 4); /* Bóng đổ */
+}
+.vbox {
+    -fx-border-color: rgba(0, 0, 0, 0.2); /* Màu viền đen với độ mờ % (cái cuối) */
+    -fx-border-width: 1; /* Độ dày của viền */
+    -fx-border-radius: 5; /* Bo tròn góc của viền */
+    -fx-padding: 10; /* Đệm bên trong */
+    -fx-spacing: 10px; /* Khoảng cách giữa các phần tử */
+}
+.flowpane {
+    -fx-hgap: 10px; /* Khoảng cách ngang giữa các phần tử */
+    -fx-vgap: 10px; /* Khoảng cách dọc giữa các phần tử */
+}
+.label {
+    -fx-border-color: lightgray; /* Màu viền */
+    -fx-border-width: 0.1px;   /* Độ dày của viền */
+    -fx-padding: 5px;        /* Khoảng cách giữa nội dung và viền */
+}
+.label1 {
+    -fx-border-color: white;
+    -fx-border-width: 0px;
+    -fx-padding-right: 0px;
+}
+
+.vbox-with-padding {
+    -fx-padding: 10px;
+}
+
+.flowpane-with-border {
+    -fx-border-width: 10px;
+    -fx-border-color: white; /* Màu viền, có thể thay đổi theo ý */
+}
+
+
