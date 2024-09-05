@@ -41,8 +41,6 @@ public class Controller {
     private Button checkoutButton;
     @FXML
     private Button cancelButton;
-    @FXML
-    private CheckBox selectAllCheckbox;
 
     private ObservableList<Product> productList = FXCollections.observableArrayList();
 
@@ -53,7 +51,6 @@ public class Controller {
 
         checkoutButton.setOnAction(event -> handleCheckout());
         cancelButton.setOnAction(event -> handleCancel());
-        selectAllCheckbox.setOnAction(event -> handleSelectAll());
 
         // Tạo TableCell tùy chỉnh để hiển thị ImageView
         productImage.setCellFactory(new Callback<>() {
@@ -283,14 +280,6 @@ public class Controller {
         for (Product product : productList) {
             product.setSelected(false);
             product.setQuantity(1);
-        }
-        productTableView.refresh();
-    }
-    @FXML
-    private void handleSelectAll() {
-        boolean isSelected = selectAllCheckbox.isSelected();
-        for (Product product : productList) {
-            product.setSelected(isSelected);
         }
         productTableView.refresh();
     }
