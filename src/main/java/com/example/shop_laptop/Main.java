@@ -17,7 +17,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) {
         try {
             Main.primaryStage = primaryStage;
-            String fxmlPath = "D:\\CODEGYM\\ProjectCodegym\\OOP2\\Downloads\\Shop_Laptop\\src\\main\\resources\\com\\example\\shop_laptop\\ProductAdmin.fxml";
+            String fxmlPath = "D:\\Shop_Laptop\\src\\main\\resources\\com\\example\\shop_laptop\\AddOrderController.fxml";
             Parent root = FXMLLoader.load(new File(fxmlPath).toURI().toURL());
             root.getStylesheets().add(Objects.requireNonNull(getClass().getResource("/styles.css")).toExternalForm());
             primaryStage.setTitle("4P Tech Store");

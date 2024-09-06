@@ -17,6 +17,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProductController {
+
+    private static final String FILE_PATH = "D:/Shop_Laptop/src/main/java/com/example/shop_laptop/text/product.txt";
+
+
     @FXML
     private TableView<Product> productTableView;
     @FXML
@@ -281,7 +285,6 @@ public class ProductController {
         }
     }
 
-    private static final String FILE_PATH = "D:/CODEGYM/ProjectCodegym/OOP2/Downloads/Shop_Laptop/src/main/java/com/example/shop_laptop/text/product.txt";
 
     private void saveToFile() {
         try (FileWriter writer = new FileWriter(FILE_PATH)) {
@@ -327,4 +330,5 @@ public class ProductController {
         }
         return productList;
     }
+
 }

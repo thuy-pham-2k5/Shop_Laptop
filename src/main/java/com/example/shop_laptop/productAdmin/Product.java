@@ -4,13 +4,14 @@ import javafx.beans.property.*;
 import javafx.scene.image.Image;
 
 public class Product {
-    private final IntegerProperty id;
-    private final ObjectProperty<Image> image;
-    private final StringProperty name;
-    private final StringProperty type;
-    private final DoubleProperty price;
-    private final IntegerProperty quantity;
-    private final DoubleProperty total;
+    private IntegerProperty id;
+    private ObjectProperty<Image> image;
+    private StringProperty name;
+    private StringProperty type;
+    private DoubleProperty price;
+    private IntegerProperty quantity;
+    private DoubleProperty total;
+    private BooleanProperty selected;
 
     public Product(int id, Image image, String name, String type, double price, int quantity, double total) {
         this.id = new SimpleIntegerProperty(id);
@@ -20,10 +21,24 @@ public class Product {
         this.price = new SimpleDoubleProperty(price);
         this.quantity = new SimpleIntegerProperty(quantity);
         this.total = new SimpleDoubleProperty();
+        this.selected = new SimpleBooleanProperty(false);
 
         // Bind total to price * quantity (tự động cập nhật)
         this.total.bind(this.price.multiply(this.quantity));
     }
+
+    public Product(Image image, String name, double price, boolean selected) {
+        this.image = new SimpleObjectProperty<>(image);
+        this.name = new SimpleStringProperty(name);
+        this.price = new SimpleDoubleProperty(price);
+        this.quantity = new SimpleIntegerProperty(1); // Khởi tạo với giá trị mặc định
+        this.total = new SimpleDoubleProperty();
+        this.selected = new SimpleBooleanProperty(selected);
+
+        // Bind total to price * quantity (tự động cập nhật)
+        this.total.bind(this.price.multiply(this.quantity));
+    }
+
 
     public IntegerProperty idProperty() {
         return id;
@@ -104,12 +119,16 @@ public class Product {
         total.set(value);
     }
 
-    public double getTotal() {
-        return total.get();
-    }
-
     public DoubleProperty totalProperty() {
         return total;
+    }
+
+    public boolean isSelected() {
+        return selected.get();
+    }
+
+    public void setSelected(boolean selected) {
+        this.selected.set(selected);
     }
 
     @Override
@@ -118,8 +137,8 @@ public class Product {
     }
 
     public static Product fromString(String line) {
-//         Phân tách chuỗi để tạo đối tượng Product
-//         Chú ý: xử lý ảnh và các giá trị khác phù hợp với định dạng của bạn
+        // Phân tách chuỗi để tạo đối tượng Product
+        // Chú ý: xử lý ảnh và các giá trị khác phù hợp với định dạng của bạn
         String[] parts = line.split(",", 7);
         if (parts.length < 7) {
             throw new IllegalArgumentException("Invalid product format.");

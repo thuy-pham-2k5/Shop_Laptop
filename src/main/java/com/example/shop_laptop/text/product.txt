@@ -1,5 +1,10 @@
-1,file:/D:/Laptop/Apple_Macbook_Air.jpg,Apple Macbook Air,Macbook,899.0,12,10788.0
-2,file:/D:/Laptop/Apple_Macbook_Pro.jpg,Apple Macbook Pro,Macbook,1099.0,10,10990.0
-3,file:/D:/Laptop/Lenovo-Yoga-9i-14-Gen-9.png,Lenovo Yoga 9i 14 Gen 9,2-in-1 Laptop,1329.3,15,19939.5
-4,file:/D:/Laptop/Lenovo-Yoga-9i-14-Gen-9_1.jpg,Asus ROG Strix Scar 18,Gaming,2999.99,20,59999.799999999996
-5,file:/D:/Laptop/ASUS_Zenbook.jpg,ASUS Zenbook,Ultrabook,1399.0,10,13990.0
+1,file:/D:/Laptop/Lenovo-Yoga-9i-14-Gen-9.png,Lenovo Yoga 9i 14 Gen 9,2-in-1 Laptop,1329.3,11,14622.3
+2,file:/D:/Laptop/Lenovo-Yoga-9i-14-Gen-9.png,Lenovo Yoga 9i 14 Gen 9,2-in-1 Laptop,1329.3,15,19939.5
+3,file:/D:/Laptop/ASUS_Zenbook.jpg,ASUS Zenbook,Ultrabook,1399.0,10,13990.0
+4,file:/D:/Laptop/Lenovo-Yoga-9i-14-Gen-9.png,Lenovo Yoga 9i 14 Gen 9,2-in-1 Laptop,1329.3,10,13293.0
+5,file:/D:/Laptop/ASUS_Zenbook.jpg,ASUS Zenbook,Ultrabook,1399.0,23,32177.0
+6,file:/D:/Laptop/Lenovo-Yoga-9i-14-Gen-9_1.jpg,Asus ROG Strix Scar 18,Gaming Laptop,2999.99,20,59999.799999999996
+7,file:/D:/Laptop/Apple_Macbook_Pro.jpg,Apple Macbook Pro,MacBook,1839.39,15,27590.850000000002
+8,file:/D:/Laptop/ASUS_Zenbook.jpg,ASUS Zenbook,Ultrabook,1289.0,11,14179.0
+9,file:/D:/Laptop/ASUS_Zenbook.jpg,ASUS Zenbook,Ultrabook,1289.0,11,14179.0
+10,file:/D:/Laptop/Lenovo-Yoga-9i-14-Gen-9.png,Lenovo Yoga 9i 14 Gen 9,Ultrabook,1359.3,15,20389.5

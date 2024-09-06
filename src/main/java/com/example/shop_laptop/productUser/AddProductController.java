@@ -10,7 +10,7 @@ import javafx.scene.image.ImageView;
 import java.io.*;
 
 public class AddProductController {
-    private static final String FILE_CART = "D:/CODEGYM/ProjectCodegym/OOP2/Downloads/Shop_Laptop/src/main/java/com/example/shop_laptop/text/cart.txt";
+    private static final String FILE_CART = "D:/Shop_Laptop/src/main/java/com/example/shop_laptop/text/cart.txt";
 
     @FXML
     private ImageView productA_image;
